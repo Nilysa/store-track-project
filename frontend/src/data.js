@@ -26,6 +26,15 @@ export default{
         artist:'Jason Chan',
         rating: 4.5,
         numReviews: 20
+        },
+        {
+        name: 'Fall',
+        category: 'Posters',
+        image: '/images/picture3.jpg',
+        price: 50,
+        artist:'Jason Chan',
+        rating: 4.5,
+        numReviews: 20
         }
     ]
 }
