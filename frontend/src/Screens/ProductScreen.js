@@ -52,7 +52,7 @@ function ProductScreen(props){
                         </select>
                     </li>
                     <li>
-                        <button className="button">
+                        <button className="button-cart">
                             Add To Cart
                         </button>
                     </li>

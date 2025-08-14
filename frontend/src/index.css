@@ -188,14 +188,14 @@ a:hover{
   display: flex;
   flex-direction: column;
 }
-.button{
+.button-cart{
   padding: 1rem;
   border: .2rem rgb(195, 55, 55) solid;
   cursor: pointer;
   border-radius: 0.5rem;
   background-color: hotpink;
 }
-button:hover{
+.button-cart:hover{
   border: .2rem rgb(174, 17, 17) solid;
   background-color: rgb(247, 67, 157);
 }
