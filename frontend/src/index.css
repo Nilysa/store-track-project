@@ -36,6 +36,7 @@ body{
 .header-links a{
     color: black;
     text-decoration: none;
+    padding: 0.5rem;
 }
 .header-links a:hover{
     color: orange;
@@ -59,6 +60,9 @@ a{
 a:hover{
     color: orange;
 }
+#root{
+  height: 100%;
+}
 
 /*home page*/
 .products{
@@ -81,9 +85,19 @@ a:hover{
     justify-content: space-between;
     height: 100%;
 }
+.product-image-container {
+    display: block;
+    width: 100%;
+    height: 34rem;
+    overflow: hidden;
+}
 .product-image{
     max-width: 34rem;
     max-height: 34rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .product-name{
     font-size: 2rem;
@@ -132,4 +146,56 @@ a:hover{
     right: 0.5rem;
     top: 1.5rem;
     color: plum;
+}
+/*product details*/
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.details-image{
+  flex: 2 1 60rem;
+}
+.details-image img{
+  max-width: 60rem;
+  width: 100%;
+}
+.details-info{
+  flex: 1 1 30rem;
+}
+.details-action{
+  flex: 1 1 30rem;
+}
+.details-info ul, .details-action ul{
+  list-style-type: none;
+  padding: 0;
+}
+.details-info li, .details-action li{
+  margin-bottom: 1rem;
+}
+.back-to-result{
+  padding: 1rem;
+}
+.details-action{
+  border: .1rem clear solid;
+  border-radius: 0.5rem;
+  background-color: rgb(97, 62, 124);
+  padding: 1rem;
+}
+.details-action ul li:last-child{
+  display: flex;
+  flex-direction: column;
+}
+.button{
+  padding: 1rem;
+  border: .2rem rgb(195, 55, 55) solid;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: hotpink;
+}
+button:hover{
+  border: .2rem rgb(174, 17, 17) solid;
+  background-color: rgb(247, 67, 157);
 }

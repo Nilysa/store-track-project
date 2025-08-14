@@ -1,7 +1,6 @@
-import data from './data';
 import './App.css';
 import HomeScreen from './Screens/HomeScreen';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import ProductScreen from './Screens/ProductScreen';
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
                     <button onClick={openMenu}>
                         &#9776;
                     </button>
-                    <a href="index.html">niloofar asoubar</a>
+                    <Link to="/">Niloofar Asoubar</Link>
                 </div>
                 <div className="header-links">
                     <a href="cart.html">Cart</a>
@@ -41,26 +40,9 @@ function App() {
             <main className="main">
                 <div className="content">
                   <Routes>
-                    <Route path="/Products/:id" component={ProductScreen}/>
-                    <Route path="/" exact={true} component={HomeScreen}/>
+                    <Route path="/Product/:id" element={<ProductScreen />} />
+                    <Route path="/" exact={true} element={<HomeScreen />}/>
                   </Routes>
-                    <ul className="products">
-                      {
-                        data.products.map(product => 
-                          <li>
-                            <div className="product">
-                                <img className="product-image" src={product.image} alt="product"></img>
-                                <div className="product-name">
-                                    <a href="product.html">{product.name}</a>
-                                </div>
-                                <div className="product-artist">{product.artist}</div>
-                                <div className="product-price">${product.price}</div>
-                                <div className="product-rating">{product.rating} stars({product.numReviews} reviews)</div>
-                            </div>
-                        </li>
-                        )
-                      }
-                    </ul>
                 </div>
             </main>
             <footer className="footer">
