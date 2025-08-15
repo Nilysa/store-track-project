@@ -1,13 +1,13 @@
-// import React from "react";
-// import { useParams} from 'react-router-dom';
+import React from "react";
+import { useParams} from 'react-router-dom';
 
 
-// function CartScreen(props){
-//     const { id } = useParams();  
+function CartScreen(props){
+    const { id } = useParams();  
 
-//     return <div>
-//         CartScreen
-//         </div>
-// }
+    return <div>
+        CartScreen
+        </div>
+}
 
-// export default CartScreen;
+export default CartScreen;
