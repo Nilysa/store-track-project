@@ -1,6 +1,6 @@
-# ANiloofar Asoubar - Paintings & Posters E-Commerce Platform
+#A Niloofar Asoubar - Paintings & Posters E-Commerce Platform
 
-# AAElegant art for elegant spaces
+#AAElegant art for elegant spaces
 
 A full-stack e-commerce platform specializing in premium paintings and posters from various artists for gothic art enthusiasts. Built with MERN stack (MongoDB, Express, React, Node.js).
 
