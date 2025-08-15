@@ -8,7 +8,8 @@ export default{
         price: 100,
         artist:'Timo Sälekivi',
         rating: 4,
-        numReviews: 8
+        numReviews: 8,
+        countInStock: 3
         },
         {
         _id: '2',
@@ -18,7 +19,8 @@ export default{
         price: 90,
         artist:'Monika mostowik',
         rating: 5,
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 1
         },
         {
         _id: '3',
@@ -28,7 +30,8 @@ export default{
         price: 50,
         artist:'Jason Chan',
         rating: 4.5,
-        numReviews: 20
+        numReviews: 20,
+        countInStock: 4
         },
         {
         _id: '4',
@@ -38,7 +41,8 @@ export default{
         price: 50,
         artist:'Jason Chan',
         rating: 4.5,
-        numReviews: 20
+        numReviews: 20,
+        countInStock: 4
         }
     ]
 }
