@@ -3,14 +3,14 @@
 ## Elegant art for elegant spaces
 
 A full-stack e-commerce platform specializing in premium paintings and posters from various artists for gothic art enthusiasts. Built with MERN stack (MongoDB, Express, React, Node.js).
-![Home Screen](./images/home-screen.png)
+![Home Screen](./images/homescreen.png)
 ## Features
 Browse beautiful collections of paintings and posters
-![Sidebar Screen](./images/sidebar-screen.png)
+![Sidebar Screen](./images/sidebar.png)
 Product details with high-resolution images
-![Product Screen](./images/product-screen.png)
+![Product Screen](./images/productscreen.png)
 Shopping cart functionality
-![Cart Screen](./images/cart-screen.png)
+![Cart Screen](./images/cartscreen.png)
 ## Installation Guide
 1. Clone Repository
 https://github.com/Nilysa/store-track-project.git
@@ -37,7 +37,7 @@ Responsive design showcasing artwork beautifully
 Product gallery and detailed view pages
 
 Interactive shopping cart
-
+![Cart Screen multiple items added](./images/multiple-cart-items.png)
 ## Backend Architecture
 Node.js with Express framework
 
