@@ -3,12 +3,7 @@ import { dirname } from 'path';
 import express from 'express';
 import data from './data.js';
 import cors from 'cors';
-import dotenv from 'dotenv';
-import config from './config.js';
-import mongoose from 'mongoose';
-import userRoute from './routes/userRoute.js';
 
-dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -17,38 +12,6 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-
-// MongoDB Connection
-const mongodbUrl = 'mongodb://niloofarasoubar:1234@localhost:27017/niloofarasoubar?authSource=admin';
-
-const connectDB = async () => {
-  try {
-    await mongoose.connect(mongodbUrl);
-    console.log('MongoDB connected successfully');
-  } catch (error) {
-    console.error('MongoDB connection error:', error.message);
-    process.exit(1); // Exit on connection failure
-  }
-};
-
-// Connection events
-mongoose.connection.on('connected', () => {
-  console.log('Mongoose connected to DB');
-});
-
-mongoose.connection.on('error', (err) => {
-  console.error('Mongoose connection error:', err);
-});
-
-mongoose.connection.on('disconnected', () => {
-  console.log('Mongoose disconnected');
-});
-
-// Connect to database
-connectDB();
-
-// Routes
-app.use("/api/users", userRoute);
 
 // Request logging middleware
 app.use((req, res, next) => {
