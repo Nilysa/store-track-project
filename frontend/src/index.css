@@ -199,3 +199,145 @@ a:hover{
   border: .2rem rgb(174, 17, 17) solid;
   background-color: rgb(247, 67, 157);
 }
+
+/* Cart */
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  align-items: flex-start;
+  background: black;
+}
+
+.cart-list {
+  flex: 3 1 60rem;
+  background: black;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid clear;
+}
+
+.cart-action {
+  flex: 1 1 20rem;
+  border-radius: 8px;
+  background-color: rgb(97, 62, 124); /* Plum */
+  padding: 1.5rem;
+}
+
+.cart-list-container {
+  padding: 0;
+  list-style-type: none;
+}
+
+.cart-list-container li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(97, 62, 124);
+}
+
+/* Cart item container */
+.cart-list-container > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid clear;
+}
+
+.cart-image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid clear;
+}
+
+/* Price positioned next to image */
+.cart-price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  min-width: 80px;
+  margin-left: 1rem;
+}
+
+.cart-name {
+  flex: 8 1;
+  padding-left: 1rem;
+}
+
+.cart-name a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.cart-name a:hover {
+  color: #ff6b6b;
+}
+.cart-name select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: rgb(183, 78, 190);
+  color: white;
+  margin-left: 0.5rem;
+}
+
+/* Empty cart message */
+.cart-list-container > div:last-child {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  font-size: 1.1rem;
+  background: indigo;
+  border-radius: 6px;
+}
+
+/* Checkout button */
+.button-primary {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgb(183, 78, 190); 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.button-primary:hover {
+  background: #ff5252; 
+}
+
+.button-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-delete{
+  color: white;
+  background:  #ff5252;   
+  border: none;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.button-delete:hover{
+  background-color: rgb(150, 24, 18);
+}
+
+/* Subtotal text */
+.cart-action h3 {
+  color: white; 
+  margin-bottom: 1.5rem;
+}
