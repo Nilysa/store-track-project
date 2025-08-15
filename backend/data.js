@@ -1,7 +1,7 @@
 export default{
     products: [
         {
-        _id: '1',
+        _id: "1",
         name: 'Maanalaiset / Subterraneans',
         category: 'Paintings',
         image: '/images/picture1.jpg',
@@ -12,7 +12,7 @@ export default{
         countInStock: 3
         },
         {
-        _id: '2',
+        _id: "2",
         name: 'pomegranate feast',
         category: 'Paintings',
         image: '/images/picture2.jpg',
@@ -23,7 +23,7 @@ export default{
         countInStock: 1
         },
         {
-        _id: '3',
+        _id: "3",
         name: 'Fall',
         category: 'Posters',
         image: '/images/picture3.jpg',
@@ -34,7 +34,7 @@ export default{
         countInStock: 4
         },
         {
-        _id: '4',
+        _id: "4",
         name: 'Fall',
         category: 'Posters',
         image: '/images/picture3.jpg',
